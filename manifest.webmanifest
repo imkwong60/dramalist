@@ -1,14 +1,26 @@
 {
-  "name": "我的影視資料庫",
-  "short_name": "影視資料庫",
-  "description": "可離線使用的影視資料庫，支援搜尋、篩選、收藏及觀看狀態。",
+  "name": "J.Law 影視遊戲",
+  "short_name": J.Law 影視遊戲",
+  "description": "J.Law 影視遊戲曲搜尋",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b1020",
-  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
   "lang": "zh-Hant",
   "icons": [
-    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
