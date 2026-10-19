@@ -1,4 +1,4 @@
-const CACHE='dramalist-pwa-v2'; // 建議更新版本號，否則瀏覽器可能會繼續使用舊的快取
+const CACHE='dramalist-pwa-v3'; // 建議更新版本號，否則瀏覽器可能會繼續使用舊的快取
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-512.png','./dramalist.csv'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
